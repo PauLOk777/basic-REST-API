@@ -1,0 +1,25 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "First app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauLOk777/nodeTest.git"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "first"
+  ],
+  "author": "PaulOk777\u001b[D\u001b[D\u001b[D\u001b[D\u001b[L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauLOk777/nodeTest/issues"
+  },
+  "homepage": "https://github.com/PauLOk777/nodeTest#readme"
+}
