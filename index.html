@@ -3,7 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>lab4.5</title>
-	<script src="index.js"></script>
+	<script>
+		function changeHr(obj) {
+			let tempColor = obj.colorChange.value;
+			let color = '';
+			for (let i = 0; i < tempColor.length; i++) {
+				if(tempColor[i] == 'C') break;
+				color += tempColor[i];
+			}
+			line.color = color;
+			line.width = `${obj.widthChange.value}%`;
+			line.size = obj.thickness.value;
+		}
+
+		function resetChanges(obj) {
+			line.color = 'blue';
+			line.width = '100%';
+			line.size = '1px';
+		}
+	</script>
 </head>
 <body>
 	<h1>HR</h1>
@@ -18,8 +36,7 @@
 		<input type="text" name="widthChange"><br><hr>
 		<input type="button" onclick="changeHr(form1)" value="Change">
 		<input type="reset" value="Reset" onclick="resetChanges(form1)">
-		<br><br><br>
-	</form>
+	</form><br><br><br>
 	<h1>OUR HR:</h1>
 	<hr color="blue" width="100%" size="1px" id="line">
 	<h1>Anketa XD</h1>
