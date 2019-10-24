@@ -1,19 +1,21 @@
-'use strict'
+'use strict';
 
 function changeHr(obj) {
-	let tempColor = obj.colorChange.value;
-	let color = '';
-	for (let i = 0; i < tempColor.length; i++) {
-		if(tempColor[i] == 'C') break;
-		color += tempColor[i];
-	}
-	line.color = color;
-	line.width = `${obj.widthChange.value}%`;
-	line.size = obj.thickness.value;
+    let line_ = document.getElementById('line');
+    let tempColor = obj.colorChange.value;
+    let color = '';
+    for (let i = 0; i < tempColor.length; i++) {
+        if (tempColor[i] == 'C') break;
+        color += tempColor[i];
+    }
+    line_.color = color;
+    line_.width = `${obj.widthChange.value}%`;
+    line_.size = obj.thickness.value;
 }
 
 function resetChanges(obj) {
-	line.color = 'blue';
-	line.width = '100%';
-	line.size = '1px';
+    let line_ = document.getElementById('line');
+    line_.color = 'blue';
+    line_.width = '100%';
+    line_.size = '1px';
 }
