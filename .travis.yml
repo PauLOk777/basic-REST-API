@@ -2,6 +2,8 @@ language: node_js
 node_js:
  - node
 script:
- - make test
+ - npm test
 notifications:
  email: false
+install:
+  - npm install
