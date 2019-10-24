@@ -4,8 +4,13 @@
   "description": "First app",
   "main": "index.js",
   "scripts": {
+    "doc": "esdoc --out docs/src/ --readme ./README.md",
+    "prettier": "prettier --config .prettierrc.json --write ./**/*.js",
     "start": "node index.js",
-    "test": "eslint ."
+    "test": "eslint .",
+    "precommit": "npm run prettier",
+    "prepush": "call npm run test",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,19 @@
   "bugs": {
     "url": "https://github.com/PauLOk777/nodeTest/issues"
   },
-  "homepage": "https://github.com/PauLOk777/nodeTest#readme"
+  "homepage": "https://github.com/PauLOk777/nodeTest#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.25",
+    "esdoc": "^1.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "mocha": "^6.2.2",
+    "prettier": "^1.18.2"
+  }
 }
