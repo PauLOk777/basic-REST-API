@@ -6,7 +6,7 @@
   "scripts": {
     "doc": "esdoc --out docs/src/ --readme ./README.md",
     "prettier": "prettier --config .prettierrc.json --write ./**/*.js",
-    "start": "node index.js",
+    "start": "index.html",
     "test": "eslint .",
     "precommit": "npm run prettier",
     "prepush": "call npm run test",

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab4.5</title>
+	<script src="index.js"></script>
+</head>
+<body>
+	<h1>HR</h1>
+	<form name="form1">
+		<h2>Color:</h2>
+		<input type="radio" name="colorChange" value="blueChange" checked><span>Blue</span><br>
+		<input type="radio" name="colorChange" value="redChange"><span>Red</span><br>
+		<input type="radio" name="colorChange" value="greenChange"><span>Green</span><br>
+		<h2>Thickness</h2>
+		<input type="text" name="thickness">
+		<h2>Width(in procents)</h2>
+		<input type="text" name="widthChange"><br><hr>
+		<input type="button" onclick="changeHr(form1)" value="Change">
+		<input type="reset" value="Reset" onclick="resetChanges(form1)">
+	</form><br><br><br>
+	<h1>OUR HR:</h1>
+	<hr color="blue" width="100%" size="1px" id="line">
+	<h1>Anketa XD</h1>
+	<form>
+		<h2>Sex:</h2>
+		<input type="radio" name="sex" value="man"><span>Man</span><br>
+		<input type="radio" name="sex" value="woman"><span>Woman</span><br>
+		<h2>Age:</h2>
+		<input type="text" id="Age">
+		<h2>Marital status:</h2>
+		<input type="radio" name="married"><span>Married</span><br>
+		<input type="radio" name="married"><span>Not married</span><br>
+		<input type="submit">
+		<input type="reset">
+	</form>
+</body>
+</html>
