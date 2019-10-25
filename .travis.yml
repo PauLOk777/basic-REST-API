@@ -10,4 +10,4 @@ install:
 deploy:
   provider: heroku
   api_key:
-    secure: 995a6d42-14d5-4a22-9090-3eafcfda319e
+    secure: f57b638e-3d0f-4f53-8b49-ad51065a5641
