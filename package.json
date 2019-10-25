@@ -1,12 +1,12 @@
 {
   "name": "nodetest",
+  "main": "index.js",
   "version": "1.0.0",
   "description": "First app",
-  "main": "index.js",
   "scripts": {
     "doc": "esdoc --out docs/src/ --readme ./README.md",
     "prettier": "prettier --config .prettierrc.json --write ./**/*.js",
-    "start": "index.html",
+    "start": "node index.js",
     "test": "eslint .",
     "precommit": "npm run prettier",
     "prepush": "call npm run test",
@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/PauLOk777/nodeTest#readme",
   "dependencies": {
-    "lodash": "^4.17.15",
-    "express": "^4.16.4"
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.25",
