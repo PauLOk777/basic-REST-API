@@ -9,6 +9,5 @@ install:
   - npm install
 deploy:
   provider: heroku
-  app: weblabnodetest
   api_key:
-    secure: e1092d15-4d60-446e-84d8-7b1dcffc77a7
+    secure: 3528b592-315a-463e-a22c-bfb8932e5391
