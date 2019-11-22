@@ -2,55 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My first deploy</title>
-	<script>
-		function changeHr(obj) {
-			let tempColor = obj.colorChange.value;
-			let color = '';
-			for (let i = 0; i < tempColor.length; i++) {
-				if(tempColor[i] == 'C') break;
-				color += tempColor[i];
-			}
-			line.color = color;
-			line.width = `${obj.widthChange.value}%`;
-			line.size = obj.thickness.value;
+	<title>Home</title>
+	<style>
+		nav {
+			margin: 0 auto;
 		}
 
-		function resetChanges(obj) {
-			line.color = 'blue';
-			line.width = '100%';
-			line.size = '1px';
+		nav ul li {
+			display: inline-block;
+			font-size: 36px;
+			text-decoration: none;
+			margin-right: 5%; 
 		}
-	</script>
+
+		a:link, a:visited {
+			text-decoration: none;
+			color: blue;
+		}
+
+		a:hover {
+			color: purple;
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
-	<h1>HR</h1>
-	<form name="form1">
-		<h2>Color:</h2>
-		<input type="radio" name="colorChange" value="blueChange" checked><span>Blue</span><br>
-		<input type="radio" name="colorChange" value="redChange"><span>Red</span><br>
-		<input type="radio" name="colorChange" value="greenChange"><span>Green</span><br>
-		<h2>Thickness</h2>
-		<input type="text" name="thickness">
-		<h2>Width(in procents)</h2>
-		<input type="text" name="widthChange"><br><hr>
-		<input type="button" onclick="changeHr(form1)" value="Change">
-		<input type="reset" value="Reset" onclick="resetChanges(form1)">
-	</form><br><br><br>
-	<h1>OUR HR:</h1>
-	<hr color="blue" width="100%" size="1px" id="line">
-	<h1>Fill this</h1>
-	<form>
-		<h2>Sex:</h2>
-		<input type="radio" name="sex" value="man"><span>Man</span><br>
-		<input type="radio" name="sex" value="woman"><span>Woman</span><br>
-		<h2>Age:</h2>
-		<input type="text" id="Age">
-		<h2>Marital status:</h2>
-		<input type="radio" name="married"><span>Married</span><br>
-		<input type="radio" name="married"><span>Not married</span><br>
-		<input type="submit">
-		<input type="reset">
-	</form>
+	<h1>ADD YOUR USER</h1>
+	<nav>
+		<ul>
+			<li><a href="/api/users">SHOW ALL</a></li>
+			<li><a href="/api/users/:id">SHOW BY ID</a></li>
+			<li><a href="/api/users">ADD NEW</a></li>
+			<li><a href="/api/users">UPDATE</a></li>
+			<li><a href="/api/users/:id">DELETE BY ID</a></li>
+		</ul>
+	</nav>
 </body>
 </html>
