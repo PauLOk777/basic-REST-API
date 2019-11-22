@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     mongoose.connect(
         'mongodb://localhost:27017/usersdb',
         { useNewUrlParser: true },
-        function(err) {
+        err => {
             if (err) {
                 console.error(err);
                 return;

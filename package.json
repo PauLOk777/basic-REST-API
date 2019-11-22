@@ -8,8 +8,7 @@
     "prettier": "prettier --config .prettierrc.json --write ./**/*.js",
     "start": "node index.js",
     "test": "eslint .",
-    "precommit": "npm run prettier",
-    "prepush": "call npm run test",
+    "precommit": "npm run prettier && npm run test",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
