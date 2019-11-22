@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const Schema = mongoose.Schema;
@@ -16,7 +17,7 @@ const User = mongoose.model('User', userSchem);
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 
 mongoose.connect(
     'mongodb://localhost:27017/usersdb',
