@@ -2,12 +2,11 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
 const Schema = mongoose.Schema;
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
+const jsonParser = express.json();
 
 const userSchem = new Schema(
     {
@@ -61,11 +60,23 @@ app.get('/api/users/:id', (req, res) => {
     });
 });
 
-app.post('/api/users', urlencodedParser, (req, res) => {
+app.post('/api/users', jsonParser, (req, res) => {
     console.log('Add new user');
+    let user = {
+        name: req.body.name,
+        age: req.body.age,
+    };
+
+    console.log(req.body.name);
+
+    User.create(user, (err, info) => {
+        if (err) return console.error(err);
+
+        res.send(info);
+    });
 });
 
-app.put('/api/users', urlencodedParser, (req, res) => {
+app.put('/api/users', jsonParser, (req, res) => {
     console.log('Update user');
 });
 

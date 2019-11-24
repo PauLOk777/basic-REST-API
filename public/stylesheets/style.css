@@ -46,3 +46,7 @@ main {
 	padding-top: 50px;
 	text-align: center;
 }
+
+input {
+	margin-right: 10px;
+}

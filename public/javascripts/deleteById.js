@@ -12,13 +12,14 @@ async function deleteById() {
         const result = await response.json();
         writeUser(result);
 
-        let main = document.getElementById('main-content');
-        main.prepend(
-            (document.createElement('h1').innerHTML = 'User was deleted')
-        );
+        let main = document.getElementById('main_content');
+        let h1 = document.createElement('h1');
+        h1.innerHTML = 'User was deleted';
+        main.prepend(h1);
 
         return;
     }
 
     alert('Invalid id');
+    console.log('Invalid id');
 }

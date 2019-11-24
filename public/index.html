@@ -8,6 +8,9 @@
 	<script src="javascripts/getById.js"></script>
 	<script src="javascripts/buildForm.js"></script>
 	<script src="javascripts/deleteById.js"></script>
+	<script src="javascripts/addUser.js"></script>
+	<script src="javascripts/writeUserGetDel.js"></script>
+	<script src="javascripts/buildFormAdd.js"></script>
 </head>
 <body>
 	<h1 align="center">MANAGE YOUR USERS</h1>
@@ -16,7 +19,7 @@
 			<ul>
 				<li><a href="#" onclick="getAll()">SHOW ALL</a></li>
 				<li><a href="#" onclick="buildForm('getById();')">SHOW BY ID</a></li>
-				<li><a href="#">ADD NEW</a></li>
+				<li><a href="#" onclick="buildFormAdd()">ADD NEW</a></li>
 				<li><a href="#">UPDATE</a></li>
 				<li><a href="#" onclick="buildForm('deleteById();')">DELETE BY ID</a></li>
 			</ul>			
