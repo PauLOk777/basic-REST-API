@@ -11,4 +11,4 @@ deploy:
   provider: heroku
   app: weblabnodetest
   api_key:
-    secure: API-KEY
+    secure: API_KEY
