@@ -42,15 +42,21 @@ app.get('/api/users', (req, res) => {
     console.log('Get all users');
     User.find({}, (err, users) => {
         if (err) return console.error(err);
+        res.status(200);
         res.send(users);
     });
 });
 
 app.get('/api/users/:id', (req, res) => {
     console.log('Get by id');
-    User.findById('5dd670bdb43129309c3ce42f', (err, user) => {
-        if (err) return console.error(err);
+    User.findById(req.params.id, (err, user) => {
+        if (err) {
+            res.status(404);
+            res.send('Error');
+            return;
+        }
 
+        res.status(200);
         res.send(user);
     });
 });
@@ -65,6 +71,11 @@ app.put('/api/users', urlencodedParser, (req, res) => {
 
 app.delete('/api/users:id', (req, res) => {
     console.log('Delete by id');
+});
+
+app.use(function(req, res, next) {
+    res.status(404);
+    res.send('<h1>Page not found</h1>');
 });
 
 process.on('SIGINT', () => {
