@@ -4,23 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Home</title>
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="javascripts/getAll.js"></script>
 </head>
 <body>
 	<h1 align="center">MANAGE YOUR USERS</h1>
 	<nav>
 		<div id="links">
 			<ul>
-				<li><a href="/api/users">SHOW ALL</a></li>
-				<li><a href="/api/users/:id">SHOW BY ID</a></li>
-				<li><a href="/api/users">ADD NEW</a></li>
-				<li><a href="/api/users">UPDATE</a></li>
-				<li><a href="/api/users/:id">DELETE BY ID</a></li>
+				<li><a href="#" onclick="getAll()">SHOW ALL</a></li>
+				<li><a href="#">SHOW BY ID</a></li>
+				<li><a href="#">ADD NEW</a></li>
+				<li><a href="#">UPDATE</a></li>
+				<li><a href="#">DELETE BY ID</a></li>
 			</ul>			
 		</div>
 	</nav>
-	<main id="main_content">
-		
-	</main>
-	<script src="javascripts/requests.js"></script>
+	<main id="main_content"></main>
 </body>
 </html>

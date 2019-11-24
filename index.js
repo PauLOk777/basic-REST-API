@@ -10,7 +10,10 @@ const Schema = mongoose.Schema;
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const userSchem = new Schema(
-    { name: String, age: Number },
+    {
+        name: { type: String, required: true },
+        age: { type: Number, required: true },
+    },
     { versionKey: false }
 );
 const User = mongoose.model('User', userSchem);
@@ -36,12 +39,20 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/users', (req, res) => {
-    res.send('Hi');
     console.log('Get all users');
+    User.find({}, (err, users) => {
+        if (err) return console.error(err);
+        res.send(users);
+    });
 });
 
 app.get('/api/users/:id', (req, res) => {
     console.log('Get by id');
+    User.findById('5dd670bdb43129309c3ce42f', (err, user) => {
+        if (err) return console.error(err);
+
+        res.send(user);
+    });
 });
 
 app.post('/api/users', urlencodedParser, (req, res) => {

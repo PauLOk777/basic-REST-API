@@ -18,3 +18,22 @@ a:hover {
 	color: purple;
 	font-weight: bold;
 }
+
+#users_table {
+	font-size: 32px;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+th {
+	background-color: #DFDCDC;
+	border: 1px solid black;
+	padding: 0 100px 0 100px;
+}
+
+td {
+	text-align: center;
+	border: 1px solid black;
+	padding: 0 100px 0 100px;
+}

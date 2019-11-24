@@ -104,9 +104,6 @@ rules:
     - error
   no-unmodified-loop-condition:
     - error
-  no-constant-condition:
-    - error
-    - checkLoops: false
   no-console:
     - off
   no-useless-concat:
@@ -119,6 +116,8 @@ rules:
     - error
     - functions: false
   no-unused-vars:
+    - warn
+  no-undef:
     - warn
   arrow-body-style:
     - error
@@ -137,8 +136,6 @@ rules:
   object-shorthand:
     - error
     - always
-  prefer-const:
-    - error
   prefer-numeric-literals:
     - error
   template-curly-spacing:
