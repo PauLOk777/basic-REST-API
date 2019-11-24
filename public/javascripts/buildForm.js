@@ -1,6 +1,6 @@
 'use strict';
 
-function buildForm() {
+function buildForm(method) {
     let main = document.getElementById('main_content');
     main.innerHTML = '';
 
@@ -19,7 +19,7 @@ function buildForm() {
     let button = document.createElement('input');
     button.setAttribute('type', 'submit');
     button.setAttribute('value', 'Search');
-    button.setAttribute('onclick', 'getById()');
+    button.setAttribute('onclick', method);
     form.append(button);
 
     main.append(div);

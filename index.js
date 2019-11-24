@@ -69,8 +69,18 @@ app.put('/api/users', urlencodedParser, (req, res) => {
     console.log('Update user');
 });
 
-app.delete('/api/users:id', (req, res) => {
+app.delete('/api/users/:id', (req, res) => {
     console.log('Delete by id');
+    User.findByIdAndDelete(req.params.id, (err, user) => {
+        if (err) {
+            res.status(404);
+            res.send('Error');
+            return;
+        }
+
+        res.status(200);
+        res.send(user);
+    });
 });
 
 app.use(function(req, res, next) {
