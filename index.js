@@ -15,6 +15,7 @@ const userSchem = new Schema(
     },
     { versionKey: false }
 );
+
 const User = mongoose.model('User', userSchem);
 
 const PORT = process.env.PORT || 3000;
@@ -78,6 +79,18 @@ app.post('/api/users', jsonParser, (req, res) => {
 
 app.put('/api/users', jsonParser, (req, res) => {
     console.log('Update user');
+
+    let userOld = req.body[0];
+    let userNew = req.body[1];
+
+    User.updateMany(userOld, userNew, (err, users) => {
+        if (err) return console.error(err);
+
+        for (let item in users) {
+            console.log(users[item]);
+        }
+        res.send(users);
+    });
 });
 
 app.delete('/api/users/:id', (req, res) => {
@@ -97,6 +110,11 @@ app.delete('/api/users/:id', (req, res) => {
 app.use(function(req, res, next) {
     res.status(404);
     res.send('<h1>Page not found</h1>');
+});
+
+app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
 });
 
 process.on('SIGINT', () => {

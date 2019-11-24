@@ -30,7 +30,7 @@ function write(text) {
         table.append(tr);
 
         let tdUser = document.createElement('td');
-        tdUser.innerText = 'Users' + (i + 1);
+        tdUser.innerText = i + 1;
         tr.append(tdUser);
 
         let tdName = document.createElement('td');
