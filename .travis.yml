@@ -7,8 +7,8 @@ notifications:
  email: false
 install:
   - npm install
-# deploy:
-#   provider: heroku
-#   app: weblabnodetest
-#   api_key:
-#     secure: api-key
+deploy:
+  provider: heroku
+  app: weblabnodetest
+  api_key:
+    secure: API-KEY
