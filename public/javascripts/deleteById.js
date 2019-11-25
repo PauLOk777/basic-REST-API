@@ -10,7 +10,7 @@ async function deleteById() {
 
     if (response.ok) {
         const result = await response.json();
-        writeUser(result);
+        writeUserGetDel(result);
 
         let main = document.getElementById('main_content');
         let h1 = document.createElement('h1');

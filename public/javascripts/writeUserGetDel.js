@@ -1,6 +1,6 @@
 'use strict';
 
-function writeUser(user) {
+function writeUserGetDel(user) {
     let div = document.createElement('div');
 
     let usersName = document.createElement('h1');
