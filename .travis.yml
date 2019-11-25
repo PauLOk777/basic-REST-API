@@ -11,21 +11,4 @@ deploy:
   provider: heroku
   app: weblabnodetest
   api_key:
-    secure: API_KEY_HEROKU
-    #   pLkRXYsPGOO+x9FI+/wq8ogMrFXzzHp2ts
-    # C5mLq4ehznr0/t5irqr2GMad2YcogRvdeYWlyKIpwl
-    # IkEtehduteyYBrBJChPQgbDSoBpjJlfl0GsotUEPgA
-    # mL3iDETzD+MeoHV0ugrRGHdDMBGtqtAyk2U02UIH8Z
-    # 9qfrs2bR0MuoERfAs0MjBU+R6hoj83u9mojFaJtK18
-    # vLB4br5UxqA1cCI5loI5zcywRbYxs/MUmXZJpxbkUF
-    # FLT48RKpYa3OK9kfDFhSDv3R6G9zJ4m5Ay8Gq+Ij2G
-    # A+SScgkAKafsDq0MtarSa/Rdm0Iu8YViDoclJ5u7AA
-    # VoYXSv0ciT+KbHS21HkHx/Hva2xo38+Dtob8QNXTXE
-    # RIPYPtjpHLASZmZwC3h4xmSCRL1U1wd8dXnfpTFoPF
-    # Q4hSkHjzJctTAojDz3QnGvIfanwYpFP9IdKtPQLi00
-    # dxonJ2LtxxNJK1ddW6A/tLImm2bklES04/HqwHJwLN
-    # qqj284+cjDGkwLrzwYiYQSeORFDh+vUV9uf8gf3qZ0
-    # kzPOCJ5OnUM3pvrd16qiAAxImPEFVTIDYi4PWLHEfj
-    # 9cxQZwbdmqgCF50AhwNUIblBcu/y0g+sA9G5YxsAZ+
-    # Or9cdrDdV1hbMmRAzqPWOwt9gLSVBlUZAw70G53I26
-    # UmsEyltXrf/n7y5HTVg=
+    secure: pLkRXYsPGOO+x9FI+/wq8ogMrFXzzHp2tsC5mLq4ehznr0/t5irqr2GMad2YcogRvdeYWlyKIpwlIkEtehduteyYBrBJChPQgbDSoBpjJlfl0GsotUEPgAmL3iDETzD+MeoHV0ugrRGHdDMBGtqtAyk2U02UIH8Z9qfrs2bR0MuoERfAs0MjBU+R6hoj83u9mojFaJtK18vLB4br5UxqA1cCI5loI5zcywRbYxs/MUmXZJpxbkUFFLT48RKpYa3OK9kfDFhSDv3R6G9zJ4m5Ay8Gq+Ij2GA+SScgkAKafsDq0MtarSa/Rdm0Iu8YViDoclJ5u7AAVoYXSv0ciT+KbHS21HkHx/Hva2xo38+Dtob8QNXTXERIPYPtjpHLASZmZwC3h4xmSCRL11wd8dXnfpTFoPFQ4hSkHjzJctTAojDz3QnGvIfanwYpFP9IdKtPQLi00dxonJ2LtxxNJK1ddW6A/tLImm2bklES04/HqwHJwLNqqj284+cjDGkwLrzwYiYQSeORFDh+vUV9uf8gf3qZ0kzPOCJ5OnUM3pvrd16qiAAxImPEFVTIDYi4PWLHEfj9cxQZwbdmqgCF50AhwNUIblBcu/y0g+sA9G5YxsAZ+Or9cdrDdV1hbMmRAzqPWOwt9gLSVBlUZAw70G53I26UmsEyltXrf/n7y5HTVg=
