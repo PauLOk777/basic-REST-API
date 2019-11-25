@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-console.log(MONGODB_URI);
+console.log(process.env.MONGODB_URI);
 
 mongoose.connect(
     process.env.MONGODB_URI,
