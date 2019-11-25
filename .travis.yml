@@ -11,10 +11,7 @@ deploy:
   provider: heroku
   app: weblabnodetest
   api_key:
-    secure: API
+    secure: f7d54c06-b98e-4c55-9d51-b73459689f76
   app: weblabnodetest
   on: 
     repo: PauLOk777/basic-REST-API
-env:
-  global:
-    secure: EvfHkZma5f8NgO35j/2JDVKY3rxoHF0VEMiIi34yADtuwGDrhMhjwocECDORLBLoaYY6UvkW0PRloQCPSg+aDPJv2YRq6X8ZmdMxgDDAxV4d/SDG4QsBnz1ksVSKol+sjXG9wEwrSMXEK81SI1FBgRI9r1jOLbDgX9FDoMWhzRC0zwc51sIaVBTOFi9wP1X7oxINs4nKdT+Xh39NZN6sZTMjbmZNCnlCs9eAnRCZ5CADMfz1Xx0tl1pGXtxpZrZnBJDc5wkEjPa42t2pXPjAhgvhh6v+vm8Pwd+88zSHd6yAtSwYp3BmsG2QhNpuTn19xJGmZh6vFX/E80kymINnRZTl+gd7JGYTk5WQjcDaTVFSfqLbC4cp5tEb2yHf19LscaaJOgAFUT7VBirTUI3Rv6vBecZ0QS/KURsaArg6/kQmenVPReq2OkDgKzfdXFr5vfb50FIUBiaWpADOMFaqZkPAIF0/CEoqkV6lPKkuo5I1cj94G+keG0k4QLjG1XK9A3HzKUrR+GCpaZpT8IbJGUVJaJZEcqpHpsYM+L9+GuK4QsoAFqpTqOMzkiFfDfJrPaqC2aEhd3M5totm5L90J4ipv5hjOabh5KVsIxmclmXLv/ztwyAO4eZPOLBdklLzwmy/Mvwdd0VxmgGoBFecmvMyKAsx8w3Xh3W5FY4aHIM=
