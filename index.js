@@ -23,7 +23,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-mongoose.connect(process.env.DB_URL,
+console.log(MONGODB_URI);
+
+mongoose.connect(
+    process.env.MONGODB_URI,
     { useNewUrlParser: true, useUnifiedTopology: true },
     function(err) {
         if (err) console.error(err);
