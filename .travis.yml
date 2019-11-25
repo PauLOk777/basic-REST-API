@@ -11,4 +11,20 @@ deploy:
   provider: heroku
   app: weblabnodetest
   api_key:
-    secure: API_KEY
+    secure: "feomAjdhpUN4LGFCj83yt3Aq+g/Bx1OFu
+    /40c/Vff4hr7xykAINJMHYsTiMozgyoFRvvwfe9SPZ
+    YBHiTYILtoDxjr1iuCesvZUwDTh/OietjCZfZODRNO
+    vCbGM22AngMPGZ4f6tCqDg/Mtgz6uU4o2X+Rg4069z
+    aFi0lsBPnVLTb9WFRK0K9Fez+QrO/D3yzjJgEix2X9
+    gsaEFwcLczQqsAkSpC8JBZtjhjvG1i4DKpHV6LgKMh
+    aSIN4AyPqMoumu1fgXZ/KiEBpz2pfuyOqx0XiMdbBY
+    qZGaIOx3wG2x4bDv42hnbK+4eEzi/+i+/gUktkQEfj
+    J2orBekDk9wEsNKKQA2UJpaW/6SbykwkDpGWjAaPpj
+    UZCYkau9Mch7RTqd4OIhOV9QK6TkAYVWj54E9b7oTF
+    /HOuc+5ktNuIys1AtCIUbuxNM40UykuOFHsMarh3qA
+    AUIsru0yZ9t01j6iBJuzoL6wV+13Lo/VoUqxvyHdWO
+    SW1kCsILZfcRqsAS05uaIlyfhsZVRr7pQQiN3NW8xz
+    bX/JvD22dPMQWPKNefTeGlTrI6spooDHvqU2tjUSex
+    oSAsVNIRmT9AUWPNU7gDqyqTMq3z+zna6CnK277v9S
+    zA9dC5Z/D/9dYlsg0HAhMZJPEtYgPsGIFsYJsJ5IgK
+    DUO1w5MsUWZnKGLMyo9o="
