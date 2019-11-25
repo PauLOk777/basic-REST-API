@@ -24,8 +24,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 mongoose.connect(
-    'mongodb+srv://Paul:pasha2000@cluster0-nxydi.mongodb.net/test?retryWrites=true&w=majority' ||
-        'mongodb://localhost:27017/usersdb',
+    process.env.DB_URL,
     { useNewUrlParser: true, useUnifiedTopology: true },
     function(err) {
         if (err) console.error(err);
