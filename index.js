@@ -23,8 +23,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-mongoose.connect(
-    process.env.DB_URL,
+mongoose.connect(process.env.DB_URL,
     { useNewUrlParser: true, useUnifiedTopology: true },
     function(err) {
         if (err) console.error(err);
