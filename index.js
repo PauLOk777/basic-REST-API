@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 const Schema = mongoose.Schema;
@@ -23,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 mongoose.connect(
-    'mongodb://localhost:27017/usersdb',
+    process.env.DB_URL || 'mongodb://localhost:27017/usersdb',
     { useNewUrlParser: true, useUnifiedTopology: true },
     function(err) {
         if (err) console.error(err);

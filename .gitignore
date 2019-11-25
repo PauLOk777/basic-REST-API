@@ -33,3 +33,4 @@
 
 #MyIgnore
 node_modules
+.env
