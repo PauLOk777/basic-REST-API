@@ -19,8 +19,6 @@ const userSchem = new Schema(
 
 const User = mongoose.model('User', userSchem);
 
-const PORT = process.env.PORT || 3000;
-
 app.use(express.static('public'));
 
 console.log(process.env.MONGODB_URI);
@@ -31,9 +29,7 @@ mongoose.connect(
     function(err) {
         if (err) console.error(err);
         console.log('>>> Database was connected');
-        app.listen(PORT, '127.0.0.1', function() {
-            console.log('>>> Server is running!');
-        });
+        app.listen(process.env.PORT || 8080);
     }
 );
 
