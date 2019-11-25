@@ -1,30 +1,30 @@
 language: node_js
 node_js:
- - node
+- node
 script:
- - npm test
+- npm test
 notifications:
- email: false
+  email: false
 install:
-  - npm install
+- npm install
 deploy:
   provider: heroku
   app: weblabnodetest
   api_key:
-    secure: "feomAjdhpUN4LGFCj83yt3Aq+g/Bx1OFu
-    /40c/Vff4hr7xykAINJMHYsTiMozgyoFRvvwfe9SPZ
-    YBHiTYILtoDxjr1iuCesvZUwDTh/OietjCZfZODRNO
-    vCbGM22AngMPGZ4f6tCqDg/Mtgz6uU4o2X+Rg4069z
-    aFi0lsBPnVLTb9WFRK0K9Fez+QrO/D3yzjJgEix2X9
-    gsaEFwcLczQqsAkSpC8JBZtjhjvG1i4DKpHV6LgKMh
-    aSIN4AyPqMoumu1fgXZ/KiEBpz2pfuyOqx0XiMdbBY
-    qZGaIOx3wG2x4bDv42hnbK+4eEzi/+i+/gUktkQEfj
-    J2orBekDk9wEsNKKQA2UJpaW/6SbykwkDpGWjAaPpj
-    UZCYkau9Mch7RTqd4OIhOV9QK6TkAYVWj54E9b7oTF
-    /HOuc+5ktNuIys1AtCIUbuxNM40UykuOFHsMarh3qA
-    AUIsru0yZ9t01j6iBJuzoL6wV+13Lo/VoUqxvyHdWO
-    SW1kCsILZfcRqsAS05uaIlyfhsZVRr7pQQiN3NW8xz
-    bX/JvD22dPMQWPKNefTeGlTrI6spooDHvqU2tjUSex
-    oSAsVNIRmT9AUWPNU7gDqyqTMq3z+zna6CnK277v9S
-    zA9dC5Z/D/9dYlsg0HAhMZJPEtYgPsGIFsYJsJ5IgK
-    DUO1w5MsUWZnKGLMyo9o="
+    secure: pLkRXYsPGOO+x9FI+/wq8ogMrFXzzHp2ts
+    C5mLq4ehznr0/t5irqr2GMad2YcogRvdeYWlyKIpwl
+    IkEtehduteyYBrBJChPQgbDSoBpjJlfl0GsotUEPgA
+    mL3iDETzD+MeoHV0ugrRGHdDMBGtqtAyk2U02UIH8Z
+    9qfrs2bR0MuoERfAs0MjBU+R6hoj83u9mojFaJtK18
+    vLB4br5UxqA1cCI5loI5zcywRbYxs/MUmXZJpxbkUF
+    FLT48RKpYa3OK9kfDFhSDv3R6G9zJ4m5Ay8Gq+Ij2G
+    A+SScgkAKafsDq0MtarSa/Rdm0Iu8YViDoclJ5u7AA
+    VoYXSv0ciT+KbHS21HkHx/Hva2xo38+Dtob8QNXTXE
+    RIPYPtjpHLASZmZwC3h4xmSCRL1U1wd8dXnfpTFoPF
+    Q4hSkHjzJctTAojDz3QnGvIfanwYpFP9IdKtPQLi00
+    dxonJ2LtxxNJK1ddW6A/tLImm2bklES04/HqwHJwLN
+    qqj284+cjDGkwLrzwYiYQSeORFDh+vUV9uf8gf3qZ0
+    kzPOCJ5OnUM3pvrd16qiAAxImPEFVTIDYi4PWLHEfj
+    9cxQZwbdmqgCF50AhwNUIblBcu/y0g+sA9G5YxsAZ+
+    Or9cdrDdV1hbMmRAzqPWOwt9gLSVBlUZAw70G53I26
+    UmsEyltXrf/n7y5HTVg=
