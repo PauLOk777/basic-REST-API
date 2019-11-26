@@ -10,7 +10,7 @@ async function getById() {
 
     if (response.ok) {
         const result = await response.json();
-        writeUser(result);
+        writeUserGetDel(result);
         return;
     }
 
